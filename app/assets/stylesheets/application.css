@@ -15,7 +15,7 @@
  *= require foundation_and_overrides
 
  */
-body {margin: 1em 0}
+body.auth {margin: 1em 0}
 .top-bar {margin-bottom: 1em;}
 #profile {margin-bottom: 4em;}
 #dump {overflow-y: scroll}
