@@ -16,7 +16,5 @@
 
  */
 
-.top-bar,
-#profile {
-    margin-bottom: 1em;
-}
+.top-bar {margin-bottom: 1em;}
+#profile {margin-bottom: 4em;}
