@@ -7,14 +7,18 @@
 
 <div class="row">
     <div class="large-2 large-offset-2 columns">
-        <%=image_tag size_avatar(200, @profile['info']['image'])%>
+        <%=image_tag( size_avatar(200, @profile['info']['image']) )%>
     </div>
     <div class="large-6 columns">
         <h2><%=@profile['info']['name']%></h2>
     </div>
 </div>
 
-<div class="panel callout radius">
-    <h3>Raw Profile Data</h3>
-    <%=debug @profile%>
+<div class="row">
+    <div class="large-8 large-offset-2 columns">
+        <div class="panel callout radius">
+            <h3>Raw Profile Data</h3>
+            <%=debug @profile%>
+        </div>
+    </div>
 </div>
