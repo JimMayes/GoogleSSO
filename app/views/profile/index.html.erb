@@ -5,33 +5,4 @@
     </div>
 </div>
 
-<% if @profile %>
-<div id="profile" class="row">
-    <div class="large-2 large-offset-2 columns">
-        <%=image_tag( size_avatar(200, @profile['info']['image']) )%>
-    </div>
-    <div class="large-6 columns end">
-        <h2><%=@profile['info']['name']%></h2>
-        <%=@profile['info']['email']%>
-    </div>
-</div>
-
-<div class="row">
-    <div class="large-8 large-offset-2 columns">
-        <div id="dump" class="panel callout radius">
-            <h3>Full Google Profile Dump</h3>
-            <%=debug @profile%>
-        </div>
-    </div>
-</div>
-<% else %>
-<div id="profile" class="row">
-    <div class="large-2 large-offset-2 columns">
-        <%=image_tag 'https://placeholdit.imgix.net/~text?txtsize=60&txt=?&w=200&h=200'%>
-    </div>
-    <div class="large-6 columns end">
-        <h2>Unknown</h2>
-        <%=current_user.email%>
-    </div>
-</div>
-<% end %>
+<%=debug current_user.identities%>
