@@ -16,6 +16,7 @@
 
  */
 
-.top-bar {
+.top-bar,
+#margin {
     margin-bottom: 1em;
 }
