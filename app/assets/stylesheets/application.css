@@ -18,3 +18,4 @@
 
 .top-bar {margin-bottom: 1em;}
 #profile {margin-bottom: 4em;}
+#dump {overflow-y: scroll}
