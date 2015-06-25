@@ -46,3 +46,5 @@ gem 'omniauth'
 gem 'omniauth-google-oauth2'
 
 gem 'hashie'
+
+gem 'foundation-rails', '5.4.5'

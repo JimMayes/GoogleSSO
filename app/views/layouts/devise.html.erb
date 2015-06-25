@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%=render 'shared/head_elements'%>
+    </head>
+
+    <body>
+        <%=render 'shared/flashes'%>
+        <div class="row">
+            <div class="large-8 large-offset-2 columns">
+                <%= yield %>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,16 +1,29 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>GoogleSSO</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+<html lang="en">
+    <head>
+        <%=render 'shared/head_elements'%>
+    </head>
 
-<%= yield %>
+    <body>
+        <nav class="top-bar" data-topbar role="navigation">
+            <ul class="title-area">
+                <li class="name">
+                <h1><a href="#">Google Single Sign On Demo</a></h1>
+                </li>
+            </ul>
 
-</body>
+            <section class="top-bar-section">
+                <% if user_signed_in? %>
+                <ul class="right">
+                    <li><%=link_to "Sign Out", sign_out_path()%></li>
+                </ul>
+                <% end %>
+            </section>
+        </nav>
+
+        <%=render 'shared/flashes'%>
+
+        <%= yield %>
+
+    </body>
 </html>
